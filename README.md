@@ -46,10 +46,10 @@ Proje, modern ve ölçeklenebilir bir teknoloji yığını üzerine inşa edilmi
 * **Core:** Python 3.x, Asyncio (Asenkron Mimari)
 * **LLM Runtime:** Ollama (Localhost)
 * **Modeller:** Qwen 2.5 (Analist) & Gemma 2 (Eleştirmen)
-* **AI & NLP:** PyTorch, Sentence Transformers, Scikit-learn, NumPy
+* **AI & NLP:** PyTorch, Scikit-learn
 * **Arayüz:** Gradio
 * **Arama & RAG:** DuckDuckGo Search, Sentence Transformers, NumPy
-* **Container:** Docker, Docker Compose
+* **Container:** Docker
 * **Cache:** Redis 7
 
 ---
