@@ -1,0 +1,9 @@
+[
+  {
+    "round": 1,
+    "mode": "eleştirel",
+    "qwen": "En güvenli büyük ölçekli veritabanı seçenekleri arasında MongoDB ve Oracle Database bulunmaktadır. MongoDB'nün avantajları, yüksek ölçeklendirilebilirliği, hızlı veri erişimi ve ölçeklenebilirlik yapısıdır. Ancak, Oracle Database daha hassas verilerin saklanmasına ve daha karmaşık sorgulamalara uygun olup, aynı zamanda çok sayıda kullanıcıya hizmet verebilen performans sağlar.\n\nİşte bu seçenekler arasındaki ana eleştirel noktalar:\n\n1. Güvenlik: Oracle Database genellikle daha kapsamlı güvenlik özellikleri sunar.\n2. Ölçeklenebilirlik: MongoDB daha verimli ölçeklenebilir bir çözüm olabilir.\n3. Veri Türü: Belirli türdeki verilerin saklanması durumunda Oracle tercih edilebilir.\n\nEn uygun seçimi, belirli iş gerekliliklerine ve şirketin bütçesine göre belirlenmelidir.",
+    "gemma": "[Hata] ",
+    "timestamp": "2026-01-26T23:19:34.018775"
+  }
+]
