@@ -4,7 +4,7 @@
 ![AI](https://img.shields.io/badge/Architecture-Multi--Agent-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Think AI:** Veri güvenliğini esas alan otonom akıl yürütme motoru. İki farklı LLM'in birbirini sürekli denetlediği bu mimari, en doğru sonucu üretirken verilerinizi tamamen yerel depolama (local storage) alanında izole eder.
+**Think AI:** Veri güvenliğini esas alan otonom akıl yürütme motoru. İki farklı LLM'in birbirini sürekli denetlediği bu mimari, en doğru sonucu üretirken verilerinizi tamamen yerel depolama (local storage) alanında izole eder. Docker containerization ve Redis cache entegrasyonu ile production-ready hale getirilmiştir.
 
 ---
 
@@ -28,6 +28,14 @@ Bu yaklaşım, özellikle teknik analiz, kod incelemesi ve araştırma gibi doğ
 * **Semantik Hafıza:** Sistem, geçmiş konuşmaları vektör tabanlı olarak saklar ve bağlamı koruyarak daha tutarlı cevaplar üretir.
 * **Profesyonel Raporlama:** Analiz süreci ve sonuçları, kurumsal kullanıma uygun Markdown (.md) formatında rapor olarak dışa aktarılabilir.
 * **Gizlilik Odaklı:** Ollama altyapısı sayesinde tüm veriler ve işlem gücü yerel makinenizde kalır; buluta veri gönderilmez.
+* **Docker Containerization:** Tüm sistem container'larda izole çalışır. Tek komutla kurulum, cross-platform uyumluluk ve production-ready deployment.
+* **Redis Cache:** Tekrar eden sorular anında yanıtlanır. %88 cache hit rate ile 35x performans artışı sağlanmıştır.
+* **PII Güvenlik:** Hassas veriler (email, telefon, TC kimlik) otomatik olarak maskelenir.
+
+<img width="1918" height="900" alt="think ai security 1" src="https://github.com/user-attachments/assets/70124c08-31f0-4ea7-be4d-0bedf8a9d6b5" />
+
+<img width="1002" height="157" alt="think ai security 2" src="https://github.com/user-attachments/assets/61c41872-bb02-4a50-ba39-d16113113fb0" />
+
 
 ---
 
@@ -40,6 +48,8 @@ Proje, modern ve ölçeklenebilir bir teknoloji yığını üzerine inşa edilmi
 * **Modeller:** Qwen 2.5 (Analist) & Gemma 2 (Eleştirmen)
 * **Arayüz:** Gradio
 * **Arama & RAG:** DuckDuckGo Search, Sentence Transformers, NumPy
+* **Container:** Docker, Docker Compose
+* **Cache:** Redis 7
 
 ---
 
@@ -52,17 +62,33 @@ Proje, modern ve ölçeklenebilir bir teknoloji yığını üzerine inşa edilmi
 Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 ### 1. Gereksinimler
-Sistemenizde **Python** ve **Ollama** kurulu olmalıdır.
 
-### 2. Modellerin Hazırlanması
-Terminal üzerinden projenin ihtiyaç duyduğu ajanları indirin:
+* **Docker Desktop** kurulu olmalıdır
+* **16 GB RAM** önerilir (minimum 8 GB)
+* **15 GB boş disk alanı**
+
+### 2. Hızlı Kurulum
+
+**Windows:**
+```powershell
+git clone https://github.com/KULLANICI_ADINIZ/Think_AI_Main.git
+cd Think_AI_Main
+.\start.ps1
+```
+
+**Linux/Mac:**
 ```bash
-ollama pull qwen2.5
-ollama pull gemma2
+git clone https://github.com/KULLANICI_ADINIZ/Think_AI_Main.git
+cd Think_AI_Main
+chmod +x start.sh
+./start.sh
+```
 
-git clone [https://github.com/KULLANICI_ADINIZ/ThinkAI.git](https://github.com/KULLANICI_ADINIZ/ThinkAI.git)
-cd ThinkAI
+İlk çalıştırmada modeller otomatik indirilir (10-15 dakika).
 
-pip install -r requirements.txt
+### 3. Kullanım
 
-python gradio_ui.py
+Tarayıcınızda açın:
+```
+http://localhost:7860
+```
