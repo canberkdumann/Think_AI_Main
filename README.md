@@ -4,7 +4,7 @@
 ![AI](https://img.shields.io/badge/Architecture-Multi--Agent-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Think AI:** Veri güvenliğini esas alan otonom akıl yürütme motoru. İki farklı LLM'in birbirini sürekli denetlediği bu mimari, en doğru sonucu üretirken verilerinizi tamamen yerel depolama (local storage) alanında izole eder. Docker containerization ve Redis cache entegrasyonu ile production-ready hale getirilmiştir.
+**Think AI:** Veri güvenliğini esas alan otonom akıl yürütme motoru. İki farklı LLM'in birbirini sürekli denetlediği bu mimari, en doğru sonucu üretirken verilerinizi tamamen yerel depolama (local storage) alanında izole eder. Docker containerization ve Redis cache entegrasyonu ile production-ready bir altyapı sunar.
 
 ---
 
@@ -46,6 +46,7 @@ Proje, modern ve ölçeklenebilir bir teknoloji yığını üzerine inşa edilmi
 * **Core:** Python 3.x, Asyncio (Asenkron Mimari)
 * **LLM Runtime:** Ollama (Localhost)
 * **Modeller:** Qwen 2.5 (Analist) & Gemma 2 (Eleştirmen)
+* **AI & NLP:** PyTorch, Sentence Transformers, Scikit-learn, NumPy
 * **Arayüz:** Gradio
 * **Arama & RAG:** DuckDuckGo Search, Sentence Transformers, NumPy
 * **Container:** Docker, Docker Compose
