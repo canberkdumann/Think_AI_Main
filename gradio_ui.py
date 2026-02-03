@@ -416,4 +416,4 @@ with gr.Blocks(css=custom_css, title="Think AI") as demo:
     export_btn.click(export_current_conversation, inputs=[gr.State("MD")], outputs=[export_file])
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860, share=False)
+    demo.launch(server_name="0.0.0.0", server_port=7860, share=True)
