@@ -4,7 +4,7 @@
 ![AI](https://img.shields.io/badge/Architecture-Multi--Agent-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Think AI:** Veri güvenliğini esas alan otonom akıl yürütme motoru. İki farklı LLM'in birbirini sürekli denetlediği bu mimari, en doğru sonucu üretirken verilerinizi tamamen yerel depolama (local storage) alanında izole eder. Docker containerization ve Redis cache entegrasyonu ile production-ready bir altyapı sunar.
+**Think AI:** Veri gizliliği odaklı otonom akıl yürütme motoru. İki farklı yapay zeka modelinin (LLM) birbirini sürekli denetleyerek en doğru sonucu ürettiği bu mimari, verilerinizi tamamen yerel bellekte izole eder. Docker konteyner mimarisi, Redis önbellek sistemi ve yerleşik Kişisel Veri (PII) koruma kalkanı ile canlı kullanıma hazır, profesyonel bir altyapı sunar.
 
 ---
 
