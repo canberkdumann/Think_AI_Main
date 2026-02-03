@@ -65,7 +65,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 ### 1. Gereksinimler
 
 * **Docker Desktop** kurulu olmalıdır
-* **16 GB RAM** önerilir (minimum 8 GB)
+* minimum **16 GB RAM** önerilir  
 * **15 GB boş disk alanı**
 
 ### 2. Hızlı Kurulum
